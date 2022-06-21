@@ -5,7 +5,7 @@
 
 <h1 align='center'>hello, this is a little about me</h1>
 
-<p align='center'>Hi There, I'm Dika</p>
+<p align='center'>Hi There, I'm FANKY</p>
 
 <p align='center'>
 
@@ -21,7 +21,7 @@
 
 <a href="https://instagram.com/cak_haho" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="cak_haho" height="30" width="40" /></a>
 
-<a href="https://wa.me/6288292024190" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/whatsapp.svg" alt="Dika Ardnt." height="30" width="40" /></a>
+<a href="https://wa.me/62895386194665" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/whatsapp.svg" alt="Dika Ardnt." height="30" width="40" /></a>
 
 
 </p>
@@ -32,12 +32,8 @@
 
 - 🤝 I just copy paste
 
-- 📫 How to reach me  [`Whatsapp`](https://wa.me/6288292024190?text=halo+bang)
+- 📫 How to reach me  [`Whatsapp`](https://wa.me/62895386194665?text=halo+bang)
 
 - ⚡ My hobby is watching anime
 
-![https://github-readme-stats.vercel.app/api?username=DikaArdnt&hide=%5B%22issues%22%5D&show_icons=true&title_color=fff&icon_color=fff&text_color=fff&bg_color=11998e](https://github-readme-stats.vercel.app/api?username=DikaArdnt&hide=%5B%22issues%22%5D&show_icons=true&title_color=fff&icon_color=fff&text_color=fff&bg_color=11998e)
-
-## ⌨️ Is My Project
-* WhatsApp Bot Normal [`DikaArdnt/Hisoka-Morrow`](https://github.com/DikaArdnt/Hisoka-Morrow)
-* WhatsApp Bot Multi Device [`DikaArdnt/Hisoka-Morou`](https://github.com/DikaArdnt/Hisoka-Morou)
+![https://github-readme-stats.vercel.app/api?username=DikaArdnt&hide=%5B%22issues%22%5D&show_icons=true&title_color=fff&icon_color=fff&text_color=fff&bg_color=11998e](https://github-readme-stats.vercel.app/api?username=DikaArdnt&hide=%5B%22issues%22%5D&show_icons=true&title_color=fff&icon_color=fff&text_color=fff&bg_color=11998e

@@ -42,5 +42,4 @@
 
 
 ## ⌨️ Is My Project
-* WhatsApp Bot Normal [`Rudal-XD/DarkBotWa`](https://github.com/Rudal-XD/DarkBotWa)
-* WhatsApp Bot Multi Device [`Rudal-XD/DarkBotWa`](https://github.com/Rudal-XD/DarkBotWa)
+* Script untuk convert token FB [`convert`](https://github.com/Rudal-XD/convert)

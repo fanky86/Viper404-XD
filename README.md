@@ -1,5 +1,11 @@
 <p align="center">
 
+
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23FF0000&lines=WELCOME+TO+MY+GITHUB+CHIGOZIEWORLDWIDE)](https://git.io/typing-svg)
+
+
+
 <img src="https://telegra.ph/file/f2af590bc17f309b46dc2.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 

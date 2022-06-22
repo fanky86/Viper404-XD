@@ -42,4 +42,4 @@
 
 
 ## ⌨️ Is My Project
-* Script untuk convert token FB [`convert`](https://github.com/Rudal-XD/convert)
+* script to convert FB tokens[`convert`](https://github.com/Rudal-XD/convert)

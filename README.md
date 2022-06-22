@@ -1,4 +1,7 @@
-[{"src":"\/file\/f2af590bc17f309b46dc2.jpg"}]
+<p align="center">
+
+<img src="https://telegra.ph/file/f2af590bc17f309b46dc2.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+</p>
 
 
 

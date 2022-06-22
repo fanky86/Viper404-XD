@@ -18,7 +18,7 @@
 
 <p align="left">
 
-<a href="https://www.facebook.com/fakhrimusthofa.fakhrimusthofa.1.id" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="fakhrimusthofa.fakhrimusthofa.1." height="30" width="40" /></a>
+<a href="https://www.facebook.com/fakhrimusthofa.fakhrimusthofa.1" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="fakhrimusthofa.fakhrimusthofa.1." height="30" width="40" /></a>
 
 <a href="https://instagram.com/fanky292" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="fanky292" height="30" width="40" /></a>
 

@@ -2,7 +2,7 @@
 <p align="center">
 <a href="#"><img title="Arelbot" src="https://img.shields.io/badge/Termux Whatsapp Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 <p align="center">
-<a href="https://github.com/mrfzvx12/followers"><img title="Followers" src="https://img.shields.io/github/followers/mrfzvx12?color=blue&style=flat-square"></a>
+<a href="https://github.com/Rudal-XD/followers"><img title="Followers" src="https://img.shields.io/github/followers/Rudal-XD?color=blue&style=flat-square"></a>
 <a href="https://github.com/mrfzvx12/termux-whatsapp-bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/mrfzvx12/termux-whatsapp-bot?color=red&style=flat-square"></a>
 <a href="https://github.com/mrfzvx12/termux-whatsapp-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/mrfzvx12/termux-whatsapp-bot?color=red&style=flat-square"></a>
 <a href="https://github.com/mrfzvx12/termux-whatsapp-bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/mrfzvx12/termux-whatsapp-bot?label=Watchers&color=blue&style=flat-square"></a>

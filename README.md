@@ -12,6 +12,8 @@
 
 <p align="center">
 
+<span class="card-title"><span id="month">Juli</span> <span id="year">2022</span></span>
+
 
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23FF0000&lines=WELCOME+TO+MY+GITHUB+Rudal-XD)](https://git.io/typing-svg)

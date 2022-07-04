@@ -12,7 +12,7 @@
 
 <p align="center">
 
-<h1>04</h1><span class="updated-date">27 Juni 2022</span><span class="card-title"><span id="month">Juli</span> <span id="year">2022</span></span>
+<span id="days">04</span><span id="month">Juli</span> <span id="year">2022</span></span>
 
 
 

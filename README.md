@@ -62,11 +62,11 @@
 ## ⌨️ Is My Project
 * script to convert FB tokens[`convert`](https://github.com/Rudal-XD/convert)
 
-![github stats](https://github-readme-stats.vercel.app/api?username=Yayan-XD&show_icons=true&theme=dark)
-<a href="https://github.com/Yayan-XD/ymbf"><img title="ymbf" src="https://github-readme-stats.vercel.app/api/pin/?username=Yayan-XD&repo=ymbf&theme=vision-friendly-dark"></a>
-<a href="https://github.com/Yayan-XD/Brute"><img title="Brute" src="https://github-readme-stats.vercel.app/api/pin/?username=Yayan-XD&repo=Brute&theme=vision-friendly-dark"></a>
-<a href="https://github.com/Yayan-XD/Cr4ck"><img title="Cr4ck" src="https://github-readme-stats.vercel.app/api/pin/?username=Yayan-XD&repo=Cr4ck&theme=vision-friendly-dark"></a>
+![github stats](https://github-readme-stats.vercel.app/api?username=Rudal-XD&show_icons=true&theme=dark)
+<a href="https://github.com/Rudal-XD/convert"><img title="convert" src="https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=convert&theme=vision-friendly-dark"></a>
+<a href="https://github.com/Rudal-XD/Brute"><img title="Brute" src="https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=&theme=vision-friendly-dark"></a>
+<a href="https://github.com/Rudal-XD/Cr4ck"><img title="Cr4ck" src="https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=Cr4ck&theme=vision-friendly-dark"></a>
 
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yayan-XD&layout=compact" alt="Top language">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rudal-XD&layout=compact" alt="Top language">
 
-![template_s](https://github.com/Yayan-XD/Yayan-XD/blob/master/img/wallpaperbetter_(1).jpg)
+![template_s](https://github.com/Rudal-XD/Rudal-XD/blob/master/img/wallpaperbetter_(1).jpg)

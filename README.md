@@ -62,7 +62,6 @@
 ## ⌨️ Is My Project
 * script to convert FB tokens[`convert`](https://github.com/Rudal-XD/convert)
 
-![github stats](https://github-readme-stats.vercel.app/api?username=Rudal-XD&show_icons=true&theme=dark)
 <a href="https://github.com/Rudal-XD/convert"><img title="convert" src="https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=convert&theme=vision-friendly-dark"></a>
 <a href="https://github.com/Rudal-XD/DarkBot"><img title="DarkBot" src="https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=DarkBot&theme=vision-friendly-dark"></a>
 <a href="https://github.com/Rudal-XD/spamsms"><img title="spamsms" src="https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=spamsms&theme=vision-friendly-dark"></a>

@@ -10,7 +10,7 @@
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue.svg"></a>
 
 
-<a href="time %H:%M:%S"</a>
+<p align="center">
 
 
 

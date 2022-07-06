@@ -1,4 +1,4 @@
-SV</p>
+</p>
 <p align="center">
 <a href="#"><img title="Arelbot" src="https://img.shields.io/badge/MY HACKER TEMUX-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 <p align="center">

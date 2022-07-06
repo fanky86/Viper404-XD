@@ -10,8 +10,7 @@
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue.svg"></a>
 
 
-<p align="center"> start time
-<date +"%H:%M:%S">
+<p align="center"><start time date +"%H:%M:%S">
 
 
 

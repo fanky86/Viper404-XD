@@ -2,7 +2,7 @@ SV</p>
 <p align="center">
 <a href="#"><img title="Arelbot" src="https://img.shields.io/badge/MY HACKER TEMUX-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 <p align="center">
-<a href="https://github.com/Rudal-XD/followers"><img title="Followers" src="https://img.shields.io/github/followers/Rudal-XD?color=blue&style=flat-square"></a>
+<a href="https://github.com/Rudal-XD?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/Rudal-XD?color=blue&style=flat-square"></a>
 <a href="https://github.com/Rudal-XD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Rudal-XD?color=red&style=flat-square"></a>
 <a href="https://github.com/Rudal-XD/Rudal-XD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Rudal-XD?color=red&style=flat-square"></a>
 <a href="https://github.com/Rudal-XD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Rudal-XD?label=watchers&color=blue&style=flat-square"></a>

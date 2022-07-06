@@ -10,7 +10,8 @@
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue.svg"></a>
 
 
-<p align="center"><span id="days">04</span><span id="month">Juli</span> <span id="year">2022</span></p>
+<p align="center"> start time
+<date +"%H:%M:%S">
 
 
 

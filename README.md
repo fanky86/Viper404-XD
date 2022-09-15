@@ -1,6 +1,6 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZyFlFBAHC4X5ZFpoAbSKreUxXZzXksLU0dQ&amp;usqp=CAU" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Senjata Laras Pendek Archives - KKIP Komite Kebijakan Industri ..." style="width: 393px; height: 314.896px; margin: 0px;" data-iml="5402.299999982119">
 
-
+<img src="https://telegra.ph/Op-09-15-2">
 
 </p>
 <p align="center">
@@ -25,7 +25,7 @@
 
 <h1 align='center'>hello, this is a little about me</h1>
 
-<p align='center'>Hi There, I'm FANKY</p>
+<p align='center'>Hi There, I'm CYBER MUSLIM</p>
 
 <p align='center'>
 

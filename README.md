@@ -1,6 +1,5 @@
+</p>
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZyFlFBAHC4X5ZFpoAbSKreUxXZzXksLU0dQ&amp;usqp=CAU" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Senjata Laras Pendek Archives - KKIP Komite Kebijakan Industri ..." style="width: 393px; height: 314.896px; margin: 0px;" data-iml="5402.299999982119">
-
-<img src="https://telegra.ph/file/1663202211258.jpg">
 
 </p>
 <p align="center">

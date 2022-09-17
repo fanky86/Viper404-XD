@@ -26,8 +26,6 @@
 
 <p align='center'>Hi There, I'm CYBER MUSLIM</p>
 
-<p align='center'>
-
 
 <a href="https://instagram.com/fanky292"><img height="30" src="https://github.com/ArugaZ/ArugaZ/blob/main/images/instagram.svg?raw=true"></a>&nbsp;&nbsp;
 

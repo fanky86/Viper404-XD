@@ -28,8 +28,6 @@
 
 <p align='center'>
 
-<a href="https://instagram.com/fanky292"><img height="30" src="https://github.com/ArugaZ/ArugaZ/blob/main/images/instagram.svg?raw=true"></a>&nbsp;&nbsp;
-
 <h3 align="left">My Social Media  </h3>
 
 <p align="left">

@@ -36,7 +36,7 @@
 
 <a href="https://instagram.com/fanky292" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="fanky292" height="30" width="40" /></a>&nbsp;&nbsp;
 
-<a href="https://wa.me/62895386194665" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/whatsapp.svg" alt="Rudal-XD." height="30" width="40" /></a>&nbsp;&nbsp;
+<a href="https://wa.me/62895386194665" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/whatsapp.svg" alt="Rudal-XD." height="30" width="40" />green</a>&nbsp;&nbsp;
 
 
 </p>

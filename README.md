@@ -1,5 +1,5 @@
 </p>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZyFlFBAHC4X5ZFpoAbSKreUxXZzXksLU0dQ&amp;usqp=CAU" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Senjata Laras Pendek Archives - KKIP Komite Kebijakan Industri ..." style="width: 393px; height: 314.896px; margin: 0px;" data-iml="5402.299999982119">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBm25Wa32TJoMFRfNMC3kKlJPTeGPUZrXUmA&amp;usqp=CAU" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="anime loli" style="width: 400px; height: 519.481px; margin: 0px;" data-iml="12269.70000000298">
 
 </p>
 <p align="center">

@@ -15,7 +15,8 @@
 
 
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23FF0000&lines=WELCOME+TO+MY+GITHUB+Rudal-XD)](https://git.io/typing-svg)
+<img src="http://readme-typing-svg.herokuapp.com?color=%230B80F7&center=true&vCenter=true&multiline=false&lines=WELCOME;My+name+is+Fanky-XD;IKUTIN-SOSIALMEDIA+SAYA!!;JANGAN+LUPA+JOIN+GROUP%2C++Bwang+%3A);jangan+lupa+kasih+start+!" alt="budii">
+
 
 
 

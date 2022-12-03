@@ -25,7 +25,7 @@
 
 <h1 align='center'>hello, this is a little about me</h1>
 
-<p align='center'>Hi There, I'm CYBER MUSLIM</p>
+<p align='center'>Hi There, I'm FANKY</p>
 
 <p align='center'>
 

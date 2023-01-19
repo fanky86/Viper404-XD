@@ -58,8 +58,8 @@
 
 ## ⌨️ Is My Project
 
-<a href="https://github.com/Rudal-XD/convert"><img title="convert" src="https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=convert&theme=vision-friendly-dark"></a>
-<a href="https://github.com/Rudal-XD/DarkBot"><img title="DarkBot" src="https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=DarkBot&theme=vision-friendly-dark"></a>
-<a href="https://github.com/Rudal-XD/spamsms"><img title="spamsms" src="https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=spamsms&theme=vision-friendly-dark"></a>
+<a href="https://github.com/Rudal-XD/convert"><img title="convert" src="https://github-stats-alpha.vercel.app/api?username=Rudal-XD&cc=000&tc=fff&ic=fff&bc=000"></a>
+<a href="https://github.com/Rudal-XD/DarkBot"><img title="DarkBot" src="https://github-stats-alpha.vercel.app/api?username=Rudal-XD&cc=000&tc=fff&ic=fff&bc=000"></a>
+<a href="https://github.com/Rudal-XD/spamsms"><img title="spamsms" src="https://github-stats-alpha.vercel.app/api?username=Rudal-XD&cc=000&tc=fff&ic=fff&bc=000"></a>
 
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rudal-XD&layout=compact" alt="Top language">
+  <img src="https://github-readme-alpha.vercel.app/api/?username=Rudal-XD&layout=compact" alt="Top language">

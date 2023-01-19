@@ -35,7 +35,7 @@
 
 <a href="https://www.facebook.com/fakhrimusthofa.fakhrimusthofa.1" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="fakhrimusthofa.fakhrimusthofa.1." height="30" width="40" />👈my facebook👈</a>&nbsp;&nbsp;
 
-<a href="https://instagram.com/fanky292" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="fanky292" height="30" width="40" />👈my instagram🥰</a>&nbsp;&nbsp;
+<a href="https://instagram.com/fanky_a7" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="fanky292" height="30" width="40" />👈my instagram🥰</a>&nbsp;&nbsp;
 
 <a href="https://wa.me/62895386194665" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/whatsapp.svg" alt="Rudal-XD." height="30" width="40" />👈my whatsaap😗</a>&nbsp;&nbsp;
 

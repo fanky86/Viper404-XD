@@ -56,4 +56,4 @@
 
 ## ⌨️ Is My Project
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=islamic)](https://github.com/Rudal-XD)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=islamic)](https://github.com/Rudal-XD/islamic)

@@ -55,8 +55,5 @@
 
 ## ⌨️ Is My Project
 
-<a href="https://github.com/Rudal-XD/convert"><img title="convert" src="https://github-stats-alpha.vercel.app/api?username=Rudal-XD&cc=000&tc=fff&ic=fff&bc=000"></a>
-<a href="https://github.com/Rudal-XD/DarkBot"><img title="DarkBot" src="https://github-readme-stats.vercel.app/api?username=Rudal-XD&show_icons=true&theme=aura"></a>
-<a href="https://github.com/Rudal-XD/spamsms"><img title="spamsms" src="https://github-readme-stats.vercel.app/api?username=Rudal-XD&show_icons=true&theme=dark"></a>
 
   <img src="https://github-readme-alpha.vercel.app/api/?username=Rudal-XD&layout=compact" alt="Top language">

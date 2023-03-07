@@ -56,4 +56,4 @@
 ## ⌨️ Is My Project
 
 
-  <img src="https://github-readme-alpha.vercel.app/api/?username=Rudal-XD&layout=compact" alt="Top language">
+  <img src="https://github-readme-alpha.vercel.app/api/?Rudal-XD=&layout=compact" alt="Top Script">

@@ -55,6 +55,4 @@
 
 ## ⌨️ Is My Project
 
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=islamic)](https://github.com/Rudal-XD/islamic)
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianbord)](https://github.com/Rudal-XD)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)

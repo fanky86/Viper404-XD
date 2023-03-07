@@ -56,4 +56,4 @@
 
 ## ⌨️ Is My Projectt
 
-https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=islamic
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/Rudal-XD/islamic)

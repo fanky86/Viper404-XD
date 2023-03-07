@@ -56,4 +56,4 @@
 ## ⌨️ Is My Project
 
 
-  <src="https://github.com/Rudal-XD/islamic alt="islamic">
+  <img src="https://github.com/Rudal-XD/islamic alt="islamic">

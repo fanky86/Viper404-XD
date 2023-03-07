@@ -1,7 +1,4 @@
 </p>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBm25Wa32TJoMFRfNMC3kKlJPTeGPUZrXUmA&amp;usqp=CAU" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="anime loli" style="width: 400px; height: 519.481px; margin: 0px;" data-iml="12269.70000000298">
-
-</p>
 <p align="center">
 <a href="#"><img title="Arelbot" src="https://img.shields.io/badge/MY HACKER MUSLIM CYBER-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 <p align="center">

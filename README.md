@@ -49,10 +49,10 @@
 
 - ⚡ My hobby play game
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/Rudal-XD/islamic)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Rudal-XD&show_icons=true&theme=aura)
 
 
 ## ⌨️ Is My Project
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)

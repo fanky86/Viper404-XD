@@ -56,4 +56,4 @@
 ## ⌨️ Is My Project
 
 
-  <img src="https://github.com/Rudal-XD/islamic" >
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=github-readme-stats)](https://github.com/Rudal-XD/islamic)

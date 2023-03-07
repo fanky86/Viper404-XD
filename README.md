@@ -54,6 +54,6 @@
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Rudal-XD&show_icons=true&theme=aura)
 
 
-## ⌨️ Is My Project
+## ⌨️ Is My Projectt
 
 https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=islamic

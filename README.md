@@ -57,4 +57,4 @@
 
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=islamic)](https://github.com/Rudal-XD/islamic)
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=Rudal-XD)](https://github.com/anuraghazra/github-readme-stats)
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/Rudal-XD)

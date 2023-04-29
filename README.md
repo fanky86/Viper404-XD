@@ -30,22 +30,12 @@
 
 <p align="center">
 &nbsp; <a href="https://www.youtube.com/rozhakid" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/youtube.png" width="50" /></a>  
-&nbsp; <a href="https://www.instagram.com/rozhak_official/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
-&nbsp; <a href="https://wa.me/6283847921480" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" width="50" /></a>
-&nbsp; <a href="https://www.facebook.com/rozhak.xyz" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/facebook.png"  width="50" /></a>
-</p>
-
-<h3 align="left">My Social Media  </h3>
-
-<p align="left">
-
-<a href="https://www.facebook.com/fakhrimusthofa.fakhrimusthofa.1" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="fakhrimusthofa.fakhrimusthofa.1." height="30" width="40" />👈my facebook👈</a>&nbsp;&nbsp;
-
-<a href="https://instagram.com/fanky_a7" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="fanky_a7" height="30" width="40" />👈my instagram🥰</a>&nbsp;&nbsp;
-
-<a href="https://wa.me/62895386194665" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/whatsapp.svg" alt="Rudal-XD." height="30" width="40" />👈my whatsaap😗</a>&nbsp;&nbsp;
-
-
+<p>
+&nbsp; <a href="https://instagram.com/fanky_a7" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
+<p>
+&nbsp; <a href="https://wa.me/62895386194665" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" width="50" /></a>
+<p>
+&nbsp; <a href="https://www.facebook.com/fakhrimusthofa.fakhrimusthofa.1" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/facebook.png"  width="50" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>

@@ -30,7 +30,7 @@
 
 <p align="center">
 <p>
-&nbsp; <a href="https://www.youtube.com/rozhakid" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/youtube.png" width="50" /></a>  
+&nbsp; <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/youtube.png" width="50" /></a>  
 <p>
 &nbsp; <a href="https://instagram.com/fanky_a7" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
 <p>

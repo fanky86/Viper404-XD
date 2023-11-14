@@ -17,7 +17,7 @@
 
 
 
-<img src="https://telegra.ph/file/f2af590bc17f309b46dc2.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+<img src="https://telegra.ph/viper-11-14" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 
 <h1 align='center'>hello, this is a little about me</h1>

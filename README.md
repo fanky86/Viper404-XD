@@ -1,4 +1,4 @@
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Niki404-Cyber&label=Profile%20views&color=eb4d3d&style=flat-square" alt="Niki404-Cyber" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=Rudal-XD&label=Profile%20views&color=eb4d3d&style=flat-square" alt="Rudal-XD" /> </p>
 </i></b></h3>
 <h3 align="center">
 </p>

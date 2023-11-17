@@ -42,12 +42,6 @@
 &nbsp; <a href="https://www.facebook.com/fakhrimusthofa.fakhrimusthofa.1" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/facebook.png"  width="50" /></a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-
-<p align="left"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://img.shields.io/badge/-Node.js-black?style=flat-square&logo=Node.js" alt="nodejs" width="40" height="40"/> </a> </p>
-
-- 🤝 I just copy paste
-
 - 📫 How to reach me  [`Whatsapp`](https://wa.me/62895386194665?text=halo+bang)
 
 - ⚡ My hobby play game

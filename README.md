@@ -1,3 +1,6 @@
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=Niki404-Cyber&label=Profile%20views&color=eb4d3d&style=flat-square" alt="Niki404-Cyber" /> </p>
+</i></b></h3>
+<h3 align="center">
 </p>
 <p align="center">
 <a href="#"><img title="Arelbot" src="https://img.shields.io/badge/MY MUSLIM-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>

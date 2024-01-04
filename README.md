@@ -15,7 +15,7 @@
 
 
 
-<img src="http://readme-typing-svg.herokuapp.com?color=%230B80F7&center=true&vCenter=true&multiline=false&lines=WELCOME;My+name+is+Rudal;IKUTIN-SOSIALMEDIA+SAYA!!;JANGAN+LUPA+JOIN+GROUP%2C++Bwang+%3A);jangan+lupa+kasih+start+!" alt="budii">
+<img src="http://readme-typing-svg.herokuapp.com?color=%230B80F7&center=true&vCenter=true&multiline=false&lines=WELCOME;My+name+is+Fanky;IKUTIN-SOSIALMEDIA+SAYA!!;JANGAN+LUPA+JOIN+GROUP%2C++Bwang+%3A);jangan+lupa+kasih+start+!" alt="budii">
 
 
 
@@ -25,7 +25,7 @@
 
 <h1 align='center'>hello, this is a little about me</h1>
 
-<p align='center'>Hi There, I'm Rudal</p>
+<p align='center'>Hi There, I'm Fanky</p>
 
 <p align='center'>
 
@@ -37,12 +37,12 @@
 <p>
 &nbsp; <a href="https://instagram.com/fanky_a7" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
 <p>
-&nbsp; <a href="https://wa.me/62895386194665" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" width="50" /></a>
+&nbsp; <a href="https://wa.me/62895359611122" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" width="50" /></a>
 <p>
-&nbsp; <a href="https://www.facebook.com/fakhrimusthofa.fakhrimusthofa.1" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/facebook.png"  width="50" /></a>
+&nbsp; <a href="https://www.facebook.com/fanky.sangperudal" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/facebook.png"  width="50" /></a>
 </p>
 
-- 📫 How to reach me  [`Whatsapp`](https://wa.me/62895386194665?text=halo+bang)
+- 📫 How to reach me  [`Whatsapp`](https://wa.me/62895359611122?text=halo+bang)
 
 - ⚡ My hobby play game
 
@@ -53,4 +53,4 @@
 
 ## ⌨️ Is My Projectt
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=islamic)](https://github.com/Rudal-XD/islamic)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=islamic)](https://github.com/Rudal-XD/Premium)

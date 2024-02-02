@@ -46,7 +46,7 @@
 
 - ⚡ My hobby play game
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Viper404-XD&layout=compact)](https://github.com/Viper404-XD/Premium)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Viper404-XD&layout=compact)](https://github.com/Viper404-XD)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Viper404-XD&show_icons=true&theme=aura)
 

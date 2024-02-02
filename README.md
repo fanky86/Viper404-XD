@@ -1,13 +1,13 @@
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Rudal-XD&label=Profile%20views&color=eb4d3d&style=flat-square" alt="Rudal-XD" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=Rudal-XD&label=Profile%20views&color=eb4d3d&style=flat-square" alt="Viper404-XD" /> </p>
 </i></b></h3>
 <h3 align="center">
 </p>
 <p align="center">
 <a href="#"><img title="Arelbot" src="https://img.shields.io/badge/MY MUSLIM-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 <p align="center">
-<a href="https://github.com/Rudal-XD?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/Rudal-XD?color=blue&style=flat-square"></a>
-<a href="https://github.com/Rudal-XD?tab=stars/"><img title="Stars" src="https://img.shields.io/github/stars/Rudal-XD?color=red&style=flat-square"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FRudal-XD%2Ftermux-whatsapp-bot&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
+<a href="https://github.com/Viper404-XD?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/Viper404-XD?color=blue&style=flat-square"></a>
+<a href="https://github.com/Viper404-XD?tab=stars/"><img title="Stars" src="https://img.shields.io/github/stars/Viper404-XD?color=red&style=flat-square"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FViper404-XD%2Ftermux-whatsapp-bot&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue.svg"></a>
 
 
@@ -15,7 +15,7 @@
 
 
 
-<img src="http://readme-typing-svg.herokuapp.com?color=%230B80F7&center=true&vCenter=true&multiline=false&lines=WELCOME;My+name+is+Fanky;IKUTIN-SOSIALMEDIA+SAYA!!;JANGAN+LUPA+JOIN+GROUP%2C++Bwang+%3A);jangan+lupa+kasih+start+!" alt="budii">
+<img src="http://readme-typing-svg.herokuapp.com?color=%230B80F7&center=true&vCenter=true&multiline=false&lines=WELCOME;My+name+is+Fanky;IKUTIN-SOSIALMEDIA+SAYA!!;JANGAN+LUPA+JOIN+GROUP%2C++Bwang+%3A);jangan+lupa+kasih+start+!" alt="fanky">
 
 
 
@@ -46,11 +46,11 @@
 
 - ⚡ My hobby play game
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Rudal-XD&layout=compact)](https://github.com/Rudal-XD/islamic)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Viper404-XD&layout=compact)](https://github.com/Viper404-XD/Premium)
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Rudal-XD&show_icons=true&theme=aura)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Viper404-XD&show_icons=true&theme=aura)
 
 
 ## ⌨️ Is My Projectt
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Rudal-XD&repo=islamic)](https://github.com/Rudal-XD/Premium)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Viper404-XD&repo=Premium)](https://github.com/Viper404-XD/Premium)

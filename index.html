@@ -338,21 +338,26 @@
           </div>
         </div>
         <form action="https://formsubmit.co/el/confirm/a526ac6aba4afe43a159f164ec18909c" method="POST">
+          <div class="w-full lg:mx-auto lg:w-2/3">
           <div class="form-group">
             <div class="form-row">
               <div class="mb-8 w-full px-4">
                 <label for="name" class="text-base font-bold text-primary">Nama</label>
                 <input type="text" id="name" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
               </div>
-              <div class="col">
-                <input type="email" name="email" class="form-control" placeholder="EMAIL" required>
+              <div class="mb-8 w-full px-4">
+                <label for="email" class="text-base font-bold text-primary">Email</label>
+                <input type="email" id="email" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
               </div>
             </div>
           </div>
-          <div class="form-group">
-            <textarea placeholder="PESAN" class="form-control" name="message" rows="10" required></textarea>
+          <div class="mb-8 w-full px-4">
+            <label for="message" class="text-base font-bold text-primary">Pesan</label>
+            <textarea type="email" id="email" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
           </div>
-          <button type="submit" class="btn btn-lg btn-dark btn-block">KIRIM</button>
+          <div class="w-full px-4">
+            <button class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
+          </div>
         </form>
       </div>
     </section>

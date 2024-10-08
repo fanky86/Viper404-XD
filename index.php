@@ -74,17 +74,17 @@
           <div class="tgme_page_photo">
   <a href="tg://resolve?domain=cs0rderkuota"><img class="tgme_page_photo_image" src="https://i.pinimg.com/736x/7b/98/3b/7b983bcab7bd800dbbbe4b3572c17c93.jpg"></a>
 </div>
-<div class="tgme_page_title"><span dir="auto">GC berbagi video bokep</span></div>
+<div class="tgme_page_title"><span dir="auto">fannn DarkNet</span></div>
 <div class="tgme_page_extra">129k pengikut
 </div>
-<div class="tgme_page_description ">Saling Share video bokep</div>
+<div class="tgme_page_description ">Berbagi edukasi</div>
 <div class="tgme_page_action">
   <a class="tgme_action_button_new shine" href="masuk.php">Send Message</a>
 </div>
 <!-- WEBOGRAM_BTN -->
 <!-- PRIVACY_BTN -->
 <div class="tgme_page_additional">
-  If you have <strong>Telegram</strong>, you can contact <br><strong>bokep</strong> right away.
+  If you have <strong>Telegram</strong>, you can contact <br><strong>DarkNet</strong> right away.
 </div>
         </div>
         

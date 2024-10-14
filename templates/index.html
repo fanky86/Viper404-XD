@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Python Script</title>
+</head>
+<body>
+    <h1>Jalankan Script Python</h1>
+    <form action="/run" method="post">
+        <label for="target">URL Target:</label>
+        <input type="text" id="target" name="target" required><br><br>
+
+        <label for="thread">Jumlah Thread:</label>
+        <input type="number" id="thread" name="thread" required><br><br>
+
+        <label for="time">Waktu (detik):</label>
+        <input type="number" id="time" name="time" required><br><br>
+
+        <input type="submit" value="Jalankan Script">
+    </form>
+</body>
+</html>

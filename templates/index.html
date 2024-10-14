@@ -7,6 +7,17 @@
 </head>
 <body>
     <h1>Jalankan Script Python</h1>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li style="color: red;">{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
     <form action="/run" method="post">
         <label for="target">URL Target:</label>
         <input type="text" id="target" name="target" required><br><br>

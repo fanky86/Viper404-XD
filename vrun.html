@@ -36,22 +36,6 @@
             display: block;
         }
 
-        .controls {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .fullscreen-button {
-            background-color: transparent;
-            color: white;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-            margin: 0 10px;
-        }
-
         .video-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -73,12 +57,6 @@
         .video-buttons button:hover {
             background-color: #2980b9;
         }
-
-        @media screen and (max-width: 600px) {
-            .fullscreen-button {
-                font-size: 20px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -86,16 +64,13 @@
     <h1>Pemutar Video</h1>
 
     <div class="video-container">
-        <video id="videoPlayer" preload="metadata" controls>
+        <video id="videoPlayer" controls preload="metadata">
             <source src="videos/vid/v/video1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div class="controls">
-            <button class="fullscreen-button" onclick="toggleFullScreen()">🗖</button>
-        </div>
     </div>
 
-    <div class="video-buttons">
+    <div class="video-buttons" id="videoButtons">
         <button onclick="loadVideo(1)">Video 1</button>
         <button onclick="loadVideo(2)">Video 2</button>
         <button onclick="loadVideo(3)">Video 3</button>
@@ -109,37 +84,26 @@
 
     <script>
         const videoPlayer = document.getElementById('videoPlayer');
+        const videoButtons = document.getElementById('videoButtons');
 
-        // Atur video untuk mulai dalam mode pause dengan kontrol default
-        videoPlayer.pause(); // Memastikan video mulai dalam mode pause
-        videoPlayer.controls = true; // Tampilkan kontrol default
-
+        // Menyembunyikan tombol pilihan video saat video diputar
         videoPlayer.addEventListener('play', () => {
-            videoPlayer.controls = false; // Sembunyikan kontrol bawaan saat video diputar
+            videoButtons.style.display = 'none'; // Sembunyikan tombol video saat video diputar
         });
 
+        // Menampilkan tombol pilihan video saat video dijeda atau selesai
         videoPlayer.addEventListener('pause', () => {
-            videoPlayer.controls = true; // Tampilkan kontrol bawaan saat video dijeda
+            videoButtons.style.display = 'flex'; // Tampilkan kembali tombol video saat video dijeda
         });
 
         videoPlayer.addEventListener('ended', () => {
-            videoPlayer.controls = true; // Tampilkan kontrol bawaan saat video selesai
+            videoButtons.style.display = 'flex'; // Tampilkan kembali tombol video saat video selesai
         });
 
         function loadVideo(videoNumber) {
             videoPlayer.src = `videos/vid/v/video${videoNumber}.mp4`; // Load video yang dipilih
             videoPlayer.load();
             videoPlayer.play(); // Mulai memutar video
-        }
-
-        function toggleFullScreen() {
-            if (!document.fullscreenElement) {
-                videoPlayer.requestFullscreen().catch(err => {
-                    console.log(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
-                });
-            } else {
-                document.exitFullscreen();
-            }
         }
     </script>
 

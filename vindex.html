@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .error {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <div id="error-message" class="error"></div>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="validatePassword()">Login</button>
+    </div>
+
+    <script>
+        function validatePassword() {
+            // Password yang benar
+            const correctPassword = "hanyakamu";
+
+            // Mendapatkan input dari pengguna
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error-message");
+
+            // Memeriksa kredensial
+            if (password === correctPassword) {
+                // Arahkan ke halaman beranda jika login berhasil
+                window.location.href = "vrun.html"; // Ganti dengan URL halaman beranda Anda
+            } else {
+                // Tampilkan pesan kesalahan jika password salah
+                errorMessage.textContent = "Password salah!";
+            }
+        }
+    </script>
+
+</body>
+</html>

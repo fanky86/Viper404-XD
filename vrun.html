@@ -43,19 +43,13 @@
             background-color: rgba(0, 0, 0, 0.8);
         }
 
-        .play-button, .fullscreen-button {
+        .fullscreen-button {
             background-color: transparent;
             color: white;
             border: none;
             font-size: 24px;
             cursor: pointer;
             margin: 0 10px;
-        }
-
-        .timestamp {
-            margin-left: auto;
-            margin-right: 10px;
-            font-size: 16px;
         }
 
         .video-buttons {
@@ -81,7 +75,7 @@
         }
 
         @media screen and (max-width: 600px) {
-            .play-button, .fullscreen-button {
+            .fullscreen-button {
                 font-size: 20px;
             }
         }
@@ -92,10 +86,11 @@
     <h1>Pemutar Video</h1>
 
     <div class="video-container">
-        <video id="videoPlayer" src="videos/vid/v/video1.mp4" preload="metadata" controls></video>
+        <video id="videoPlayer" preload="metadata" controls>
+            <source src="videos/vid/v/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="controls">
-            <button class="play-button" id="playButton">▶</button>
-            <div class="timestamp" id="timestamp">00:00</div>
             <button class="fullscreen-button" onclick="toggleFullScreen()">🗖</button>
         </div>
     </div>
@@ -114,36 +109,27 @@
 
     <script>
         const videoPlayer = document.getElementById('videoPlayer');
-        const playButton = document.getElementById('playButton');
-        const timestamp = document.getElementById('timestamp');
 
-        playButton.addEventListener('click', () => {
-            if (videoPlayer.paused) {
-                videoPlayer.play();
-                playButton.innerText = '⏸️'; // Mengubah teks tombol menjadi pause
-            } else {
-                videoPlayer.pause();
-                playButton.innerText = '▶'; // Mengubah teks tombol menjadi play
-            }
+        // Atur video untuk mulai dalam mode pause dengan kontrol default
+        videoPlayer.pause(); // Memastikan video mulai dalam mode pause
+        videoPlayer.controls = true; // Tampilkan kontrol default
+
+        videoPlayer.addEventListener('play', () => {
+            videoPlayer.controls = false; // Sembunyikan kontrol bawaan saat video diputar
         });
 
-        videoPlayer.addEventListener('timeupdate', () => {
-            const minutes = Math.floor(videoPlayer.currentTime / 60);
-            const seconds = Math.floor(videoPlayer.currentTime % 60);
-            const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
-            timestamp.innerText = `${minutes}:${formattedSeconds}`; // Update timestamp
+        videoPlayer.addEventListener('pause', () => {
+            videoPlayer.controls = true; // Tampilkan kontrol bawaan saat video dijeda
         });
 
         videoPlayer.addEventListener('ended', () => {
-            playButton.innerText = '▶'; // Tampilkan tombol play saat video selesai
+            videoPlayer.controls = true; // Tampilkan kontrol bawaan saat video selesai
         });
 
         function loadVideo(videoNumber) {
             videoPlayer.src = `videos/vid/v/video${videoNumber}.mp4`; // Load video yang dipilih
             videoPlayer.load();
             videoPlayer.play(); // Mulai memutar video
-            playButton.innerText = '⏸️'; // Mengubah teks tombol menjadi pause
-            timestamp.innerText = '00:00'; // Reset timestamp
         }
 
         function toggleFullScreen() {

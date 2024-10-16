@@ -170,7 +170,7 @@
         });
 
         function loadVideo(videoNumber) {
-            videoPlayer.src = `videos/vid/v${videoNumber}.mp4`; // Load video yang dipilih
+            videoPlayer.src = `videos/vid/v/${videoNumber}.mp4`; // Load video yang dipilih
             videoPlayer.load();
             videoPlayer.play(); // Mulai memutar video
             playButton.style.display = 'none'; // Sembunyikan tombol play saat video baru dimulai

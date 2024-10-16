@@ -102,6 +102,12 @@
             font-size: 14px;
         }
 
+        #timeInput {
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 16px;
+        }
+
         @media screen and (max-width: 600px) {
             .play-button {
                 padding: 10px 20px;
@@ -124,8 +130,9 @@
     </div>
 
     <div class="controls">
-        <button onclick="zoomIn()">Perbesar Layar</button>
-        <button onclick="zoomOut()">Perkecil Layar</button>
+        <button onclick="toggleFullScreen()">Layar Penuh</button>
+        <input type="text" id="timeInput" placeholder="mm:ss" maxlength="5">
+        <button onclick="setTime()">Pindah ke Waktu</button>
     </div>
 
     <div class="video-buttons">
@@ -146,7 +153,6 @@
         const videoPlayer = document.getElementById('videoPlayer');
         const playButton = document.getElementById('playButton');
         const timestamp = document.getElementById('timestamp');
-        let scale = 1;
 
         playButton.addEventListener('click', () => {
             if (videoPlayer.paused) {
@@ -170,21 +176,34 @@
         });
 
         function loadVideo(videoNumber) {
-            videoPlayer.src = `videos/vid/v/${videoNumber}.mp4`; // Load video yang dipilih
+            videoPlayer.src = `videos/vid/v/video${videoNumber}.mp4`; // Load video yang dipilih
             videoPlayer.load();
             videoPlayer.play(); // Mulai memutar video
             playButton.style.display = 'none'; // Sembunyikan tombol play saat video baru dimulai
         }
 
-        function zoomIn() {
-            scale += 0.1;
-            videoPlayer.style.transform = `scale(${scale})`; // Zoom in
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                videoPlayer.requestFullscreen().catch(err => {
+                    console.log(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
         }
 
-        function zoomOut() {
-            if (scale > 0.5) {
-                scale -= 0.1;
-                videoPlayer.style.transform = `scale(${scale})`; // Zoom out
+        function setTime() {
+            const timeInput = document.getElementById('timeInput').value;
+            const [minutes, seconds] = timeInput.split(':').map(Number);
+            if (!isNaN(minutes) && !isNaN(seconds)) {
+                const totalSeconds = (minutes * 60) + seconds;
+                if (totalSeconds >= 0 && totalSeconds <= videoPlayer.duration) {
+                    videoPlayer.currentTime = totalSeconds; // Pindahkan ke waktu yang ditentukan
+                } else {
+                    alert("Waktu di luar durasi video.");
+                }
+            } else {
+                alert("Format waktu tidak valid. Gunakan mm:ss.");
             }
         }
     </script>

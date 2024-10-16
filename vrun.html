@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #282c34;
+            background-color: #1c1c1c; /* Warna latar belakang halaman */
             color: white;
             margin: 0;
             display: flex;
@@ -29,12 +29,14 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            background-color: #333; /* Warna latar belakang container video */
             margin-bottom: 20px;
         }
 
         video {
             width: 100%;
             border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
         }
 
         .play-button {
@@ -42,9 +44,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(52, 152, 219, 0.8);
-            border: none;
-            color: white;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #282c34;
             padding: 15px 25px;
             border-radius: 50%;
             font-size: 24px;
@@ -53,7 +54,7 @@
         }
 
         .play-button:hover {
-            background-color: rgba(41, 128, 185, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
         }
 
         .video-buttons {
@@ -78,6 +79,29 @@
             background-color: #2980b9;
         }
 
+        .controls {
+            margin-top: 15px;
+        }
+
+        .controls button {
+            padding: 10px 15px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .controls button:hover {
+            background-color: #27ae60;
+        }
+
+        #timestamp {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
         @media screen and (max-width: 600px) {
             .play-button {
                 padding: 10px 20px;
@@ -95,8 +119,13 @@
     <h1>Pemutar Video</h1>
 
     <div class="video-container">
-        <video id="videoPlayer" src="videos/vid/v/video1.mp4" preload="metadata"></video>
+        <video id="videoPlayer" src="videos/vid/v/video1.mp4,videos/vid/v/video2.mp4,videos/vid/v/video3.mp4" preload="metadata"></video>
         <button class="play-button" id="playButton">▶</button>
+    </div>
+
+    <div class="controls">
+        <button onclick="zoomIn()">Perbesar Layar</button>
+        <button onclick="zoomOut()">Perkecil Layar</button>
     </div>
 
     <div class="video-buttons">
@@ -111,29 +140,52 @@
         <button onclick="loadVideo(9)">Video 9</button>
     </div>
 
+    <div id="timestamp">00:00</div>
+
     <script>
         const videoPlayer = document.getElementById('videoPlayer');
         const playButton = document.getElementById('playButton');
+        const timestamp = document.getElementById('timestamp');
+        let scale = 1;
 
         playButton.addEventListener('click', () => {
             if (videoPlayer.paused) {
                 videoPlayer.play();
-                playButton.style.display = 'none'; // Hide play button when video is playing
+                playButton.style.display = 'none'; // Sembunyikan tombol play saat video diputar
             } else {
                 videoPlayer.pause();
-                playButton.style.display = 'block'; // Show play button when video is paused
+                playButton.style.display = 'block'; // Tampilkan tombol play saat video dijeda
             }
         });
 
+        videoPlayer.addEventListener('timeupdate', () => {
+            const minutes = Math.floor(videoPlayer.currentTime / 60);
+            const seconds = Math.floor(videoPlayer.currentTime % 60);
+            const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
+            timestamp.innerText = `${minutes}:${formattedSeconds}`; // Update timestamp
+        });
+
         videoPlayer.addEventListener('ended', () => {
-            playButton.style.display = 'block'; // Show play button when video ends
+            playButton.style.display = 'block'; // Tampilkan tombol play saat video selesai
         });
 
         function loadVideo(videoNumber) {
-            videoPlayer.src = `videos/video${videoNumber}.mp4`; // Load selected video
-            videoPlayer.load(); // Load the new video
-            videoPlayer.play(); // Start playing the video
-            playButton.style.display = 'none'; // Hide play button when starting a new video
+            videoPlayer.src = `videos/vid/v${videoNumber}.mp4`; // Load video yang dipilih
+            videoPlayer.load();
+            videoPlayer.play(); // Mulai memutar video
+            playButton.style.display = 'none'; // Sembunyikan tombol play saat video baru dimulai
+        }
+
+        function zoomIn() {
+            scale += 0.1;
+            videoPlayer.style.transform = `scale(${scale})`; // Zoom in
+        }
+
+        function zoomOut() {
+            if (scale > 0.5) {
+                scale -= 0.1;
+                videoPlayer.style.transform = `scale(${scale})`; // Zoom out
+            }
         }
     </script>
 

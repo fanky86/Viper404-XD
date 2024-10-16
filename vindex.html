@@ -7,7 +7,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-image: url('dist/img/background.jpg'); /* Path ke gambar di folder lokal */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -15,7 +18,7 @@
             margin: 0;
         }
         .login-container {
-            background: white;
+            background-color: rgba(255, 255, 255, 0.8); /* Warna background form dengan sedikit transparansi */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,7 +38,7 @@
         button {
             width: 100%;
             padding: 10px;
-            background-color: #3498db;
+            background-color: #3498db; /* Warna tombol login */
             color: white;
             border: none;
             border-radius: 5px;
@@ -43,7 +46,7 @@
             transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #2980b9;
+            background-color: #2980b9; /* Warna tombol saat di-hover */
         }
         .error {
             color: red;
@@ -56,26 +59,29 @@
     <div class="login-container">
         <h2>Login</h2>
         <div id="error-message" class="error"></div>
+        <input type="text" id="username" placeholder="Username" required>
         <input type="password" id="password" placeholder="Password" required>
-        <button onclick="validatePassword()">Login</button>
+        <button onclick="validateLogin()">Login</button>
     </div>
 
     <script>
-        function validatePassword() {
-            // Password yang benar
+        function validateLogin() {
+            // Username dan password yang benar
+            const correctUsername = "adminku";
             const correctPassword = "hanyakamu";
 
             // Mendapatkan input dari pengguna
+            const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
             const errorMessage = document.getElementById("error-message");
 
             // Memeriksa kredensial
-            if (password === correctPassword) {
+            if (username === correctUsername && password === correctPassword) {
                 // Arahkan ke halaman beranda jika login berhasil
                 window.location.href = "vrun.html"; // Ganti dengan URL halaman beranda Anda
             } else {
-                // Tampilkan pesan kesalahan jika password salah
-                errorMessage.textContent = "Password salah!";
+                // Tampilkan pesan kesalahan jika username atau password salah
+                errorMessage.textContent = "Username atau password salah!";
             }
         }
     </script>

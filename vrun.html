@@ -36,25 +36,43 @@
         video {
             width: 100%;
             border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
+            display: block;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
         }
 
         .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             background-color: rgba(255, 255, 255, 0.8);
             color: #282c34;
-            padding: 15px 25px;
-            border-radius: 50%;
-            font-size: 24px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 18px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
 
         .play-button:hover {
             background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .timestamp {
+            font-size: 16px;
+        }
+
+        .seek-bar {
+            flex-grow: 1;
+            margin: 0 10px;
+        }
+
+        .seek-bar input {
+            width: 100%;
+            cursor: pointer;
         }
 
         .video-buttons {
@@ -79,43 +97,10 @@
             background-color: #2980b9;
         }
 
-        .controls {
-            margin-top: 15px;
-        }
-
-        .controls button {
-            padding: 10px 15px;
-            background-color: #2ecc71;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin: 5px;
-            cursor: pointer;
-        }
-
-        .controls button:hover {
-            background-color: #27ae60;
-        }
-
-        #timestamp {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-
-        #timeInput {
-            margin-top: 10px;
-            padding: 5px;
-            font-size: 16px;
-        }
-
         @media screen and (max-width: 600px) {
             .play-button {
-                padding: 10px 20px;
-                font-size: 20px;
-            }
-
-            .video-buttons button {
                 padding: 8px 12px;
+                font-size: 16px;
             }
         }
     </style>
@@ -125,14 +110,15 @@
     <h1>Pemutar Video</h1>
 
     <div class="video-container">
-        <video id="videoPlayer" src="videos/vid/v/video1.mp4,videos/vid/v/video2.mp4,videos/vid/v/video3.mp4" preload="metadata"></video>
-        <button class="play-button" id="playButton">▶</button>
-    </div>
-
-    <div class="controls">
-        <button onclick="toggleFullScreen()">Layar Penuh</button>
-        <input type="text" id="timeInput" placeholder="mm:ss" maxlength="5">
-        <button onclick="setTime()">Pindah ke Waktu</button>
+        <video id="videoPlayer" src="videos/vid/v/video1.mp4" preload="metadata"></video>
+        <div class="controls">
+            <button class="play-button" id="playButton">▶</button>
+            <div class="timestamp" id="timestamp">00:00</div>
+            <div class="seek-bar">
+                <input type="range" id="seekBar" value="0" step="1" min="0">
+            </div>
+            <button onclick="toggleFullScreen()">Layar Penuh</button>
+        </div>
     </div>
 
     <div class="video-buttons">
@@ -147,20 +133,19 @@
         <button onclick="loadVideo(9)">Video 9</button>
     </div>
 
-    <div id="timestamp">00:00</div>
-
     <script>
         const videoPlayer = document.getElementById('videoPlayer');
         const playButton = document.getElementById('playButton');
         const timestamp = document.getElementById('timestamp');
+        const seekBar = document.getElementById('seekBar');
 
         playButton.addEventListener('click', () => {
             if (videoPlayer.paused) {
                 videoPlayer.play();
-                playButton.style.display = 'none'; // Sembunyikan tombol play saat video diputar
+                playButton.innerText = '⏸️'; // Mengubah teks tombol menjadi pause
             } else {
                 videoPlayer.pause();
-                playButton.style.display = 'block'; // Tampilkan tombol play saat video dijeda
+                playButton.innerText = '▶'; // Mengubah teks tombol menjadi play
             }
         });
 
@@ -169,17 +154,29 @@
             const seconds = Math.floor(videoPlayer.currentTime % 60);
             const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
             timestamp.innerText = `${minutes}:${formattedSeconds}`; // Update timestamp
+
+            // Update seek bar
+            const value = (videoPlayer.currentTime / videoPlayer.duration) * 100;
+            seekBar.value = value;
         });
 
         videoPlayer.addEventListener('ended', () => {
-            playButton.style.display = 'block'; // Tampilkan tombol play saat video selesai
+            playButton.innerText = '▶'; // Tampilkan tombol play saat video selesai
+            seekBar.value = 0; // Reset seek bar
+        });
+
+        seekBar.addEventListener('input', () => {
+            const seekTime = (seekBar.value / 100) * videoPlayer.duration;
+            videoPlayer.currentTime = seekTime; // Pindah ke waktu yang ditentukan
         });
 
         function loadVideo(videoNumber) {
             videoPlayer.src = `videos/vid/v/video${videoNumber}.mp4`; // Load video yang dipilih
             videoPlayer.load();
             videoPlayer.play(); // Mulai memutar video
-            playButton.style.display = 'none'; // Sembunyikan tombol play saat video baru dimulai
+            playButton.innerText = '⏸️'; // Mengubah teks tombol menjadi pause
+            seekBar.value = 0; // Reset seek bar
+            timestamp.innerText = '00:00'; // Reset timestamp
         }
 
         function toggleFullScreen() {
@@ -189,21 +186,6 @@
                 });
             } else {
                 document.exitFullscreen();
-            }
-        }
-
-        function setTime() {
-            const timeInput = document.getElementById('timeInput').value;
-            const [minutes, seconds] = timeInput.split(':').map(Number);
-            if (!isNaN(minutes) && !isNaN(seconds)) {
-                const totalSeconds = (minutes * 60) + seconds;
-                if (totalSeconds >= 0 && totalSeconds <= videoPlayer.duration) {
-                    videoPlayer.currentTime = totalSeconds; // Pindahkan ke waktu yang ditentukan
-                } else {
-                    alert("Waktu di luar durasi video.");
-                }
-            } else {
-                alert("Format waktu tidak valid. Gunakan mm:ss.");
             }
         }
     </script>

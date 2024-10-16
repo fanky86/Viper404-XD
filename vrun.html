@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemutar Video Keren</title>
+    <title>Pemutar Video Sederhana</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1c1c1c; /* Warna latar belakang halaman */
+            background-color: #181818; /* Warna latar belakang halaman */
             color: white;
             margin: 0;
             display: flex;
@@ -15,11 +15,10 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            text-align: center;
         }
 
         h1 {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .video-container {
@@ -29,13 +28,11 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-            background-color: #333; /* Warna latar belakang container video */
-            margin-bottom: 20px;
+            background-color: #000; /* Warna latar belakang video */
         }
 
         video {
             width: 100%;
-            border-radius: 10px;
             display: block;
         }
 
@@ -43,51 +40,22 @@
             display: flex;
             align-items: center;
             padding: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
         .play-button, .fullscreen-button {
-            background-color: rgba(255, 255, 255, 0.8);
-            color: #282c34;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 24px;
             cursor: pointer;
-            margin: 0 5px;
-            transition: background-color 0.3s;
-        }
-
-        .play-button:hover, .fullscreen-button:hover {
-            background-color: rgba(255, 255, 255, 0.9);
+            margin: 0 10px;
         }
 
         .timestamp {
+            margin-left: auto;
+            margin-right: 10px;
             font-size: 16px;
-            margin: 0 10px;
-        }
-
-        .seek-bar {
-            flex-grow: 1;
-            margin: 0 10px;
-        }
-
-        .seek-bar input {
-            width: 100%;
-            cursor: pointer;
-            appearance: none;
-            height: 5px;
-            background: #555;
-            border-radius: 5px;
-        }
-
-        .seek-bar input::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: #3498db;
-            cursor: pointer;
         }
 
         .video-buttons {
@@ -114,8 +82,7 @@
 
         @media screen and (max-width: 600px) {
             .play-button, .fullscreen-button {
-                padding: 8px 12px;
-                font-size: 16px;
+                font-size: 20px;
             }
         }
     </style>
@@ -125,14 +92,11 @@
     <h1>Pemutar Video</h1>
 
     <div class="video-container">
-        <video id="videoPlayer" src="videos/vid/v/video1.mp4" preload="metadata"></video>
+        <video id="videoPlayer" src="videos/vid/v/video1.mp4" preload="metadata" controls></video>
         <div class="controls">
             <button class="play-button" id="playButton">▶</button>
             <div class="timestamp" id="timestamp">00:00</div>
-            <div class="seek-bar">
-                <input type="range" id="seekBar" value="0" step="1" min="0">
-            </div>
-            <button class="fullscreen-button" onclick="toggleFullScreen()">Layar Penuh</button>
+            <button class="fullscreen-button" onclick="toggleFullScreen()">🗖</button>
         </div>
     </div>
 
@@ -152,7 +116,6 @@
         const videoPlayer = document.getElementById('videoPlayer');
         const playButton = document.getElementById('playButton');
         const timestamp = document.getElementById('timestamp');
-        const seekBar = document.getElementById('seekBar');
 
         playButton.addEventListener('click', () => {
             if (videoPlayer.paused) {
@@ -169,20 +132,10 @@
             const seconds = Math.floor(videoPlayer.currentTime % 60);
             const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
             timestamp.innerText = `${minutes}:${formattedSeconds}`; // Update timestamp
-
-            // Update seek bar
-            const value = (videoPlayer.currentTime / videoPlayer.duration) * 100;
-            seekBar.value = value;
         });
 
         videoPlayer.addEventListener('ended', () => {
             playButton.innerText = '▶'; // Tampilkan tombol play saat video selesai
-            seekBar.value = 0; // Reset seek bar
-        });
-
-        seekBar.addEventListener('input', () => {
-            const seekTime = (seekBar.value / 100) * videoPlayer.duration;
-            videoPlayer.currentTime = seekTime; // Pindah ke waktu yang ditentukan
         });
 
         function loadVideo(videoNumber) {
@@ -190,7 +143,6 @@
             videoPlayer.load();
             videoPlayer.play(); // Mulai memutar video
             playButton.innerText = '⏸️'; // Mengubah teks tombol menjadi pause
-            seekBar.value = 0; // Reset seek bar
             timestamp.innerText = '00:00'; // Reset timestamp
         }
 

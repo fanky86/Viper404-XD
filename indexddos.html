@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengujian Permintaan HTTP</title>
+    <style>
+        /* ... (styling yang sama seperti sebelumnya) ... */
+    </style>
+</head>
+<body>
+    <h1>Pengujian Permintaan HTTP</h1>
+    <label for="url">Masukkan URL:</label>
+    <input type="text" id="url" placeholder="http://example.com" required>
+    <label for="threads">Jumlah Thread:</label>
+    <input type="number" id="threads" min="1" value="1" required>
+    <label for="duration">Waktu (detik):</label>
+    <input type="number" id="duration" min="1" value="1" required>
+    <button onclick="startTesting()">Mulai Pengujian</button>
+    
+    <div id="results"></div>
+
+    <script src="scriptddos.js"></script> <!-- Menyertakan file JavaScript -->
+</body>
+</html>

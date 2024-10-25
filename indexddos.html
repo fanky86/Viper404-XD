@@ -3,52 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pengujian Permintaan HTTP</title>
+    <title>HTTP Request Tester</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
+            background-color: #eaeaea;
             color: #333;
             margin: 0;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         h1 {
-            text-align: center;
             color: #4CAF50;
+            margin-bottom: 20px;
         }
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
+            background-color: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
         }
         label {
             display: block;
             margin: 10px 0 5px;
-            color: #555;
+            text-align: left;
         }
         input {
-            width: calc(100% - 20px);
+            width: 100%;
             padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            font-size: 16px;
-        }
-        input:focus {
-            border-color: #4CAF50;
-            outline: none;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         button {
             background-color: #4CAF50;
             color: white;
-            padding: 10px;
             border: none;
-            border-radius: 4px;
+            padding: 10px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            transition: background 0.3s;
             width: 100%;
         }
         button:hover {
@@ -56,32 +55,31 @@
         }
         #results {
             margin-top: 20px;
+            border: 1px solid #ccc;
             padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
             background-color: #f9f9f9;
+            border-radius: 5px;
+            text-align: left;
             max-height: 300px;
             overflow-y: auto;
         }
         #results p {
-            margin: 0;
-            padding: 5px;
-            border-bottom: 1px solid #ddd;
-        }
-        #results p:last-child {
-            border-bottom: none;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Permintaan DDoS HTTP</h1>
+        <h1>HTTP Request Tester</h1>
         <label for="url">Masukkan URL:</label>
         <input type="text" id="url" placeholder="http://example.com" required>
+        
         <label for="threads">Jumlah Thread:</label>
         <input type="number" id="threads" min="1" value="1" required>
+        
         <label for="duration">Waktu (detik):</label>
         <input type="number" id="duration" min="1" value="1" required>
+        
         <button onclick="startTesting()">Mulai</button>
         
         <div id="results"></div>

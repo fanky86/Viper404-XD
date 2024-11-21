@@ -2,43 +2,42 @@ const chatBody = document.getElementById("chat-body");
 const userInput = document.getElementById("user-input");
 const sendButton = document.getElementById("send-button");
 
-// Fungsi untuk menampilkan pesan di chat
+// Fungsi untuk menambahkan pesan ke chat
 function addMessage(message, isBot = false) {
     const messageElement = document.createElement("div");
     messageElement.classList.add("chat-message", isBot ? "bot-message" : "user-message");
     messageElement.textContent = message;
     chatBody.appendChild(messageElement);
-    chatBody.scrollTop = chatBody.scrollHeight; // Auto-scroll ke bawah
+    chatBody.scrollTop = chatBody.scrollHeight;
 }
 
-// Fungsi untuk merespons pesan user
-function getBotResponse(userMessage) {
-    // Respons sederhana
-    const responses = {
-        "halo": "Halo juga! Ada yang bisa saya bantu?",
-        "siapa kamu?": "Saya adalah chatbot sederhana!",
-        "apa kabar?": "Saya selalu baik, bagaimana dengan Anda?",
-        "selamat tinggal": "Sampai jumpa lagi!"
-    };
+// Fungsi untuk mengirim pesan ke backend
+async function sendMessage() {
+    const message = userInput.value.trim();
+    if (!message) return;
 
-    // Jika tidak ditemukan respons, gunakan default
-    return responses[userMessage.toLowerCase()] || "Maaf, saya tidak mengerti.";
-}
+    addMessage(message, false); // Tampilkan pesan pengguna
+    userInput.value = "";
 
-// Event ketika tombol "Kirim" ditekan
-sendButton.addEventListener("click", () => {
-    const userMessage = userInput.value.trim();
-    if (userMessage) {
-        addMessage(userMessage, false); // Tambahkan pesan user
-        const botResponse = getBotResponse(userMessage); // Dapatkan respons bot
-        setTimeout(() => addMessage(botResponse, true), 500); // Tambahkan pesan bot dengan delay
-        userInput.value = ""; // Hapus input setelah terkirim
+    try {
+        const response = await fetch("http://localhost:5000/chat", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message }),
+        });
+
+        const data = await response.json();
+        addMessage(data.reply, true); // Tampilkan respons bot
+    } catch (error) {
+        console.error("Error:", error);
+        addMessage("Terjadi kesalahan. Coba lagi nanti.", true);
     }
-});
+}
 
-// Event ketika tombol Enter ditekan
+// Event handler tombol kirim
+sendButton.addEventListener("click", sendMessage);
+
+// Event handler untuk tombol Enter
 userInput.addEventListener("keypress", (event) => {
-    if (event.key === "Enter") {
-        sendButton.click();
-    }
+    if (event.key === "Enter") sendMessage();
 });

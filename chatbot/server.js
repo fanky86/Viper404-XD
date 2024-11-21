@@ -7,19 +7,24 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Ganti "YOUR_OPENAI_API_KEY" dengan API key Anda
+// Ganti dengan API Key Anda
 const openai = new OpenAI({
     apiKey: "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",
 });
 
-// Endpoint untuk menerima permintaan chat
+// Endpoint GET untuk root
+app.get("/", (req, res) => {
+    res.send("Server berjalan! Gunakan endpoint POST /chat untuk berinteraksi dengan chatbot.");
+});
+
+// Endpoint POST untuk chat
 app.post("/chat", async (req, res) => {
     const { message } = req.body;
 
     try {
         const response = await openai.chat.completions.create({
-            model: "gpt-3.5-turbo", // Model yang digunakan
-            messages: [{ role: "user", content: message }], // Pesan pengguna
+            model: "gpt-3.5-turbo",
+            messages: [{ role: "user", content: message }],
         });
 
         const botMessage = response.choices[0].message.content;

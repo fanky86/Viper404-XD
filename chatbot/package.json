@@ -1,8 +1,0 @@
-{
-    "name": "chatbot",
-    "version": "1.0.0",
-    "main": "api/chat.js",
-    "dependencies": {
-        "openai": "^4.73.0"
-    }
-}

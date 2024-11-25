@@ -13,7 +13,7 @@ app.get("/callback", (req, res) => {
 
 // Jalankan server
 app.listen(3000, () => {
-    console.log("Server berjalan di http://localhost:3000");
+    console.log("Server berjalan di https://fankyxd.xyz/callback"); // Pastikan URL callback benar
 });
 
 module.exports = app;

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Callback</title>
+</head>
+<body>
+    <h1>Facebook Login Callback</h1>
+    <p>Processing login...</p>
+    <script>
+        // Mendapatkan access_token dari URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const accessToken = urlParams.get('access_token');
+
+        if (accessToken) {
+            // Kirim permintaan ke server atau lakukan sesuatu dengan access_token
+            console.log('Access Token:', accessToken);
+            // Jika Anda ingin melakukan permintaan Graph API atau pengolahan lebih lanjut, bisa dilakukan di sini
+            // fetch('https://graph.facebook.com/me?access_token=' + accessToken)
+        } else {
+            console.log('Access token not found.');
+        }
+    </script>
+</body>
+</html>

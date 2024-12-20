@@ -718,6 +718,7 @@
           <div class="w-full lg:mx-auto lg:w-2/3">
           <div class="form-group">
             <div class="form-row">
+                
               <div class="mb-8 w-full px-4">
                 <label for="nama" class="text-base font-bold text-primary">Nama</label><br>
                 <input type="text" id="nama" name="nama" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required><br><br>
@@ -731,8 +732,9 @@
           <div class="mb-8 w-full px-4">
             <label for="pesan" class="text-base font-bold text-primary">Pesan</label><br>
             <textarea name="pesan" id="pesan" rows="5" cols="40" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required></textarea><br><br>
+            <input type="hidden" name="_redirect" value="https://fankyxd.xyz">
             <input type="hidden" name="_next" value="https://fankyxd.xyz/"> <!-- Halaman setelah submit -->
-            <input type="hidden" name="_captcha" value="true"> <!-- Nonaktifkan captcha -->
+            <input type="hidden" name="_captcha" value="false"> <!-- Nonaktifkan captcha -->
           </div>
           <div class="w-full px-4">
           	<input type="submit" class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg" value="Kirim">

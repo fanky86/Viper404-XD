@@ -703,25 +703,16 @@
     <!-- Contact Section Start -->
 
     <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
-
       <div class="container">
-
         <div class="w-full px-4">
-
           <div class="mx-auto mb-16 max-w-xl text-center">
-
             <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
-
             <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Hubungi Saya</h2>
-
             <p class="text-md font-medium text-secondary md:text-lg">Hubungi saya Menggunakan Email.</p>
             <p class="text-md font-medium text-secondary md:text-lg">🔒 Pesan ini terenkripsi end-to-end.</p>
-
           </div>
-
         </div>
-
-        <form action="https://formsubmit.co/radenmanis123@gmail.com" method="POST">
+        <form action="/send_message" method="POST">
           <input type="hidden" name="_subject" value="Pesan Baru dari Formulir Website">
           <input type="hidden" name="_template" value="table">
           <div class="w-full lg:mx-auto lg:w-2/3">
@@ -741,7 +732,7 @@
             <label for="pesan" class="text-base font-bold text-primary">Pesan</label><br>
             <textarea name="pesan" id="pesan" rows="5" cols="40" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" required></textarea><br><br>
             <input type="hidden" name="_next" value="https://fankyxd.xyz/"> <!-- Halaman setelah submit -->
-            <input type="hidden" name="_captcha" value="false"> <!-- Nonaktifkan captcha -->
+            <input type="hidden" name="_captcha" value="true"> <!-- Nonaktifkan captcha -->
           </div>
           <div class="w-full px-4">
           	<input type="submit" class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg" value="Kirim">

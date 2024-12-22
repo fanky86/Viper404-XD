@@ -19,23 +19,29 @@ def download_video():
     ydl_opts = {
         'format': 'best',  # Pilih format terbaik
         'outtmpl': '-',  # Menyimpan hasil ke stdout (output stream)
+        'quiet': True,  # Menonaktifkan output console
         'noplaylist': True,  # Jangan mengunduh playlist
     }
 
     try:
+        # Mengunduh video ke memori menggunakan yt-dlp
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            # Mengunduh video
             info_dict = ydl.extract_info(url, download=True)
+            video_url = info_dict['url']  # URL file video yang diunduh
 
-            # Menyimpan video ke memori (BytesIO)
-            video_data = ydl.prepare_filename(info_dict)  # Menyimpan data video ke BytesIO
-            video_file = BytesIO(video_data.encode('utf-8'))  # Convert ke BytesIO
+            # Unduh file video dan simpan ke dalam memori (BytesIO)
+            video_data = BytesIO()
+            with yt_dlp.YoutubeDL({'outtmpl': '-'}) as ydl:
+                ydl.download([url])
+                with open(ydl.prepare_filename(info_dict), 'rb') as f:
+                    video_data.write(f.read())
+            
+            video_data.seek(0)  # Reset pointer ke awal untuk dikirimkan
+            extension = info_dict.get('ext', 'mp4')  # Menentukan ekstensi file
 
-            # Tentukan ekstensi file video
-            extension = info_dict.get('ext', 'mp4')
+            # Kirimkan file video langsung ke pengguna
+            return send_file(video_data, as_attachment=True, download_name=f"{info_dict['title']}.{extension}", mimetype=f"video/{extension}")
 
-            # Kirimkan video ke pengguna
-            return send_file(video_file, as_attachment=True, download_name=f"{info_dict['title']}.{extension}", mimetype=f"video/{extension}")
     except Exception as e:
         return f"Terjadi kesalahan: {str(e)}", 500
 

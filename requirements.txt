@@ -1,2 +1,6 @@
 Flask
 yt-dlp
+requests
+colorama
+rich
+beautifulsoup4

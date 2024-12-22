@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Run Script</title>
+    <title>Video Downloader</title>
 </head>
 <body>
-    <h1>Click the button to run the script</h1>
-    <form action="/run_script" method="get">
-        <button type="submit">Run Script</button>
+    <h1>Video Downloader</h1>
+    <form action="/download" method="POST">
+        <label for="url">Masukkan URL Video:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Download</button>
     </form>
 </body>
 </html>

@@ -18,25 +18,30 @@ def download_video():
     # Opsi untuk mengunduh video dengan kualitas terbaik
     ydl_opts = {
         'format': 'best',  # Pilih format terbaik
-        'outtmpl': '-',  # Menyimpan hasil ke stdout (output stream)
         'quiet': True,  # Menonaktifkan output console
         'noplaylist': True,  # Jangan mengunduh playlist
+        'extractaudio': False,  # Jangan hanya mengunduh audio
+        'outtmpl': '-',  # Menyimpan hasil ke stdout (output stream) untuk diproses
     }
 
     try:
-        # Mengunduh video ke memori menggunakan yt-dlp
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            # Mengunduh video
             info_dict = ydl.extract_info(url, download=True)
-            video_url = info_dict['url']  # URL file video yang diunduh
 
-            # Unduh file video dan simpan ke dalam memori (BytesIO)
+            # Mendapatkan URL file video yang diunduh
+            video_url = info_dict['url']
+            
+            # Menyimpan file video ke dalam memori (BytesIO)
             video_data = BytesIO()
-            with yt_dlp.YoutubeDL({'outtmpl': '-'}) as ydl:
-                ydl.download([url])
-                with open(ydl.prepare_filename(info_dict), 'rb') as f:
+            
+            # Mengunduh video secara langsung dan menyimpan ke memori
+            with yt_dlp.YoutubeDL({'outtmpl': '-'}) as ydl_mem:
+                ydl_mem.download([url])
+                with open(ydl_mem.prepare_filename(info_dict), 'rb') as f:
                     video_data.write(f.read())
             
-            video_data.seek(0)  # Reset pointer ke awal untuk dikirimkan
+            video_data.seek(0)  # Set pointer ke awal
             extension = info_dict.get('ext', 'mp4')  # Menentukan ekstensi file
 
             # Kirimkan file video langsung ke pengguna

@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Halaman utama untuk menerima input dari pengguna
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('ddos.html')
 
 # Route untuk menangani pengunduhan dan memulai tugas
 @app.route('/attack', methods=['POST'])

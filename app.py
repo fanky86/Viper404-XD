@@ -17,23 +17,25 @@ def download_video():
 
     # Opsi untuk mengunduh video dengan kualitas terbaik
     ydl_opts = {
-        'format': 'best',
-        'outtmpl': '-',  # Output ke stdout, tidak menyimpan ke file lokal
+        'format': 'best',  # Pilih format terbaik
+        'outtmpl': '-',  # Menyimpan hasil ke stdout (output stream)
+        'noplaylist': True,  # Jangan mengunduh playlist
     }
 
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            result = ydl.extract_info(url, download=True)
+            # Mengunduh video
+            info_dict = ydl.extract_info(url, download=True)
 
-            # Mengambil data video yang diunduh ke dalam memori
-            video_data = ydl.prepare_filename(result)
-            video_file = BytesIO(video_data.encode('utf-8'))  # Gunakan BytesIO untuk menyimpan data di memori
-            
-            # Menemukan ekstensi file video
-            extension = result.get('ext', 'mp4')
+            # Menyimpan video ke memori (BytesIO)
+            video_data = ydl.prepare_filename(info_dict)  # Menyimpan data video ke BytesIO
+            video_file = BytesIO(video_data.encode('utf-8'))  # Convert ke BytesIO
 
-            # Mengirimkan file video langsung tanpa menyimpannya di disk
-            return send_file(video_file, as_attachment=True, download_name=f"{result['title']}.{extension}", mimetype=f"video/{extension}")
+            # Tentukan ekstensi file video
+            extension = info_dict.get('ext', 'mp4')
+
+            # Kirimkan video ke pengguna
+            return send_file(video_file, as_attachment=True, download_name=f"{info_dict['title']}.{extension}", mimetype=f"video/{extension}")
     except Exception as e:
         return f"Terjadi kesalahan: {str(e)}", 500
 
